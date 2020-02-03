@@ -37,7 +37,22 @@ $(document).ready(function() {
             //     tl.reverse();
             //     tl.play();
             // });
-
+            $('#mybtn').on('click', function() {
+                var twoblockoneT = $('#two-block_one'),
+                    twoblocktwoT = $('#two-block_two'),
+                    twoblockthreeT = $('#two-block_three'),
+                    twoblockfoureT = $('#two-block_foure'),
+                    twoblockfiveT = $('#two-block_five'),
+                    tlTwo = gsap.timeline();
+                tlTwo
+                    .fromTo(twoblockoneT, 0.5, { autoAlpha: 0, x: -100, ease: Power1.easeInOut, }, { x: 0, ease: Power1.easeInOut, autoAlpha: 1 })
+                    .fromTo(twoblocktwoT, 0.5, { autoAlpha: 0, x: -100, ease: Power1.easeInOut, }, { x: 0, ease: Power1.easeInOut, autoAlpha: 1 })
+                    .fromTo(twoblockthreeT, 0.5, { autoAlpha: 0, x: -100, ease: Power1.easeInOut, }, { x: 0, ease: Power1.easeInOut, autoAlpha: 1 })
+                    .fromTo(twoblockfoureT, 0.5, { autoAlpha: 0, x: -100, ease: Power1.easeInOut, }, { x: 0, ease: Power1.easeInOut, autoAlpha: 1 })
+                    .fromTo(twoblockfiveT, 0.5, { autoAlpha: 0, x: -100, ease: Power1.easeInOut, }, { x: 0, ease: Power1.easeInOut, autoAlpha: 1 })
+                tlTwo.pause();
+                tlTwo.play();
+            });
 
 
 
