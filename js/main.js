@@ -18,7 +18,7 @@ $(document).ready(function() {
             tl
 
                 .from(sceneThree, 1, { x: -200, autoAlpha: 1, scale: 0.7, ease: Power1.easeInOut })
-                .fromTo(money, 1.5, { y: 200, autoAlpha: 0, scale: 0.2, ease: Power1.easeOut }, { y: 210, autoAlpha: 1, scale: 1, ease: Power1.easeOut })
+                .fromTo(money, 1.5, { y: 200, autoAlpha: 0, scale: 0.2, ease: Power1.easeOut }, { y: 220, autoAlpha: 1, scale: 1, ease: Power1.easeOut })
                 .from(threeBlock, 2, { y: -160, autoAlpha: 1, ease: Power1.easeInOut }, '-=1.5')
                 .from(twoblockone, 0.5, { x: -50, ease: Power1.easeInOut, autoAlpha: 0 }, '-=1')
                 .from(twoblocktwo, 0.5, { x: -50, ease: Power1.easeInOut, autoAlpha: 0 }, '-=0.5')
