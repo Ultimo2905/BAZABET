@@ -37,7 +37,8 @@ $(document).ready(function() {
             //     tl.reverse();
             //     tl.play();
             // });
-            $('#mybtn').on('click', function() {
+            $('#mybtn').on('click', function(e) {
+                    e.preventDefault(e);
                 var twoblockoneT = $('#two-block_one'),
                     twoblocktwoT = $('#two-block_two'),
                     twoblockthreeT = $('#two-block_three'),
